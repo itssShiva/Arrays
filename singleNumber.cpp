@@ -12,9 +12,9 @@ public:
             mpp[nums[i]]++;
         }
 
-        for(int i=0;i<n;i++){
-            if(mpp[nums[i]]==1){
-                return nums[i];
+        for(auto it:mpp){
+            if(it.second==1){
+                return it.first;
             }
         }
     }
